@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7584873564930078988
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4513134827625340019}
+  - component: {fileID: 3360640051555293331}
+  - component: {fileID: 8932504659258676320}
+  - component: {fileID: 8365130583550264355}
+  - component: {fileID: 5399841152321227329}
+  m_Layer: 0
+  m_Name: Test
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4513134827625340019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584873564930078988}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.00999991, y: 0.40350744, z: -0.004176017}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3360640051555293331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584873564930078988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d55cb0f94bb2224b91097f8e062ee23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_playerName: 
+  m_playerScore: 0
+--- !u!114 &8932504659258676320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584873564930078988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9053648c023725e45b768582d8c3f239, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_targetMonoBehaviour: {fileID: 3360640051555293331}
+  m_methodeInScript:
+  - m_guidAndName: 'ExampleMethod1
+
+      123e4567-e89b-12d3-a456-426614174000'
+  - m_guidAndName: 'ExampleMethod2
+
+      789e1234-b89c-12d3-a456-426614174001'
+  m_fieldInScript:
+  - m_guidAndName: 'm_playerName
+
+      123e4567-e89b-12d3-a456-426614174000'
+  - m_guidAndName: 'm_playerScore
+
+      789e1234-b89c-12d3-a456-426614174001'
+--- !u!114 &8365130583550264355
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584873564930078988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88820f34d7c181d439b65c979901ce17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_guidAttribute:
+    m_guidAndName: 'ExampleMethod2
+
+      789e1234-b89c-12d3-a456-426614174001'
+  m_targetMonoBehaviour: {fileID: 8932504659258676320}
+--- !u!114 &5399841152321227329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7584873564930078988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0d37f147e09f8843969ea7c92021bf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_guid:
+    m_guidAndName: 'ExampleMethod2
+
+      789e1234-b89c-12d3-a456-426614174001'
+  m_information: 'Method with GUID ''789e1234-b89c-12d3-a456-426614174001'' found
+    in assembly ''Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'',
+    class ''ExampleGUIDAttributeBehaviour'':
+
+    Name: ExampleMethod2
+
+    Return
+    Type: System.Void
+
+    Parameters:
+
+    
+
+'

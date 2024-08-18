@@ -1,0 +1,23 @@
+
+{                                                                                
+  "name": "be.eloi.livingcodeattribute",                              
+  "displayName": "2024_08_18_LivingCodeGUID",                        
+  "version": "0.0.1",                         
+  "unity": "2018.1",                             
+  "unityRelease": "",                             
+  "description": "Attribute Unity that allows to tag method and field in a project to allows him to live when it is renamed later on during the project.",                         
+  "keywords": ["Script","Tool"],                       
+  "dependencies":{},     
+  "relatedPackages":{},     
+  "samples" : [],     
+  "author" : {
+"name":"",
+"mail":"",
+"url":""},     
+  "repository":{
+"type":"Git",
+"url":"https://github.com/EloiStree/2024_08_18_LivingCodeGUID.git",
+"footprint":"",
+"revision":""},     
+  "category": "Script"                   
+} 
