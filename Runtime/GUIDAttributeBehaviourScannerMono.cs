@@ -35,10 +35,10 @@ public class GUIDAttributeBehaviourScannerMono : MonoBehaviour
         m_methodeInScript.Clear();
         foreach (var method in methods)
         {
-            var attributes = method.GetCustomAttributes(typeof(GUIDAttributeMethod), true);
+            var attributes = method.GetCustomAttributes(typeof(GuidAttributeMethod), true);
             foreach (var attribute in attributes)
             {
-                GUIDAttributeMethod guidAttribute = (GUIDAttributeMethod)attribute;
+                GuidAttributeMethod guidAttribute = (GuidAttributeMethod)attribute;
                 m_methodeInScript.Add(
                     new DebugGUIDAttribute(guidAttribute.GUID, method.Name));
             }
@@ -47,10 +47,10 @@ public class GUIDAttributeBehaviourScannerMono : MonoBehaviour
         FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
         foreach (var field in fields)
         {
-            var attributes = field.GetCustomAttributes(typeof(GUIDAttributeField), true);
+            var attributes = field.GetCustomAttributes(typeof(GuidAttributeField), true);
             foreach (var attribute in attributes)
             {
-                GUIDAttributeField guidAttribute = (GUIDAttributeField)attribute;
+                GuidAttributeField guidAttribute = (GuidAttributeField)attribute;
                 m_fieldInScript.Add(
                     new DebugGUIDAttribute(guidAttribute.GUID, field.Name));
             }
@@ -83,10 +83,10 @@ public class GUIDAttributeStaticScanner : MonoBehaviour
         m_methodeInScript.Clear();
         foreach (var method in methods)
         {
-            var attributes = method.GetCustomAttributes(typeof(GUIDAttributeMethod), true);
+            var attributes = method.GetCustomAttributes(typeof(GuidAttributeMethod), true);
             foreach (var attribute in attributes)
             {
-                GUIDAttributeMethod guidAttribute = (GUIDAttributeMethod)attribute;
+                GuidAttributeMethod guidAttribute = (GuidAttributeMethod)attribute;
                 m_methodeInScript.Add(
                     new DebugGUIDAttribute(guidAttribute.GUID, method.Name));
             }
@@ -95,10 +95,10 @@ public class GUIDAttributeStaticScanner : MonoBehaviour
         FieldInfo[] fields = type.GetFields(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
         foreach (var field in fields)
         {
-            var attributes = field.GetCustomAttributes(typeof(GUIDAttributeField), true);
+            var attributes = field.GetCustomAttributes(typeof(GuidAttributeField), true);
             foreach (var attribute in attributes)
             {
-                GUIDAttributeField guidAttribute = (GUIDAttributeField)attribute;
+                GuidAttributeField guidAttribute = (GuidAttributeField)attribute;
                 m_fieldInScript.Add(
                     new DebugGUIDAttribute(guidAttribute.GUID, field.Name));
             }
@@ -117,8 +117,8 @@ public class GuidAttributeMethodCallUtility {
 
         foreach (var method in methods)
         {
-            var attributes = method.GetCustomAttributes(typeof(GUIDAttributeMethod), true);
-            var attribute = attributes.FirstOrDefault() as GUIDAttributeMethod;
+            var attributes = method.GetCustomAttributes(typeof(GuidAttributeMethod), true);
+            var attribute = attributes.FirstOrDefault() as GuidAttributeMethod;
 
             if (attribute != null && attribute.GUID == guid)
             {
@@ -137,8 +137,8 @@ public class GuidAttributeMethodCallUtility {
         var methods = targetType.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
         foreach (var method in methods)
         {
-            var attributes = method.GetCustomAttributes(typeof(GUIDAttributeMethod), true);
-            var attribute = attributes.FirstOrDefault() as GUIDAttributeMethod;
+            var attributes = method.GetCustomAttributes(typeof(GuidAttributeMethod), true);
+            var attribute = attributes.FirstOrDefault() as GuidAttributeMethod;
 
             if (attribute != null && attribute.GUID == guid)
             {
@@ -157,8 +157,8 @@ public class GuidAttributeMethodCallUtility {
         var methods = targetType.GetMethods(BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance);
         foreach (var method in methods)
         {
-            var attributes = method.GetCustomAttributes(typeof(GUIDAttributeMethod), true);
-            var attribute = attributes.FirstOrDefault() as GUIDAttributeMethod;
+            var attributes = method.GetCustomAttributes(typeof(GuidAttributeMethod), true);
+            var attribute = attributes.FirstOrDefault() as GuidAttributeMethod;
 
             if (attribute != null && attribute.GUID == guid)
             {

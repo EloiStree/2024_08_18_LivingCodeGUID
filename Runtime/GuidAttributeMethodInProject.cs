@@ -43,9 +43,9 @@ public class GuidAttributeMethodInProject: MonoBehaviour
                     foreach (MethodInfo method in type.GetMethods(BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic))
                     {
                         // Check if the method has the GUIDAttributeMethod attribute
-                        foreach (var attr in method.GetCustomAttributes(typeof(GUIDAttributeMethod), false))
+                        foreach (var attr in method.GetCustomAttributes(typeof(GuidAttributeMethod), false))
                         {
-                            GUIDAttributeMethod guidAttr = (GUIDAttributeMethod)attr;
+                            GuidAttributeMethod guidAttr = (GuidAttributeMethod)attr;
                             if (guidAttr.GUID == targetGuid)
                             {
                                 // Display information about the method

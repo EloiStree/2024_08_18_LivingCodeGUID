@@ -2,12 +2,12 @@ using System;
 using UnityEngine;
 
 [AttributeUsage(AttributeTargets.Method, Inherited = true, AllowMultiple = true)]
-sealed class GUIDAttributeMethod : Attribute
+sealed class GuidAttributeMethod : Attribute
 {
     readonly string m_guidValue;
 
 
-    public GUIDAttributeMethod(string guid)
+    public GuidAttributeMethod(string guid)
     {
         this.m_guidValue = guid;
     }
@@ -26,12 +26,12 @@ sealed class GUIDAttributeMethod : Attribute
 }
 
 [AttributeUsage(AttributeTargets.Field, Inherited = true, AllowMultiple = true)]
-sealed class GUIDAttributeField : Attribute
+sealed class GuidAttributeField : Attribute
 {
     readonly string m_guidValue;
 
 
-    public GUIDAttributeField(string guid)
+    public GuidAttributeField(string guid)
     {
         this.m_guidValue = guid;
     }
@@ -51,10 +51,10 @@ sealed class GUIDAttributeField : Attribute
 }
 
 [AttributeUsage(AttributeTargets.Class, Inherited = true, AllowMultiple = true)]
-sealed class GUIDAttributeClass : Attribute
+sealed class GuidAttributeClass : Attribute
 {
     readonly string m_guidValue;
-    public GUIDAttributeClass(string guid)
+    public GuidAttributeClass(string guid)
     {
         this.m_guidValue = guid;
     }
